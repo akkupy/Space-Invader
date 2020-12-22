@@ -12,15 +12,15 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Space Invader")
 
 # Logo
-logo = pygame.image.load('rocket.png')
+logo = pygame.image.load('Photos/rocket.png')
 pygame.display.set_icon(logo)
 
 # Background
-background = pygame.image.load('background.png')
+background = pygame.image.load('Photos/background.png')
 
 # Background Song
 
-music = pygame.mixer_music.load("background_song.mp3")
+music = pygame.mixer_music.load("Sounds/background_song.mp3")
 pygame.mixer_music.play(-1)
 
 # Collision (bullet and alien)
@@ -39,7 +39,7 @@ def collison1(a, b, c, d):
 
 
 score = 0
-font = pygame.font.Font('freesansbold.ttf', 32)
+font = pygame.font.Font('Font/freesansbold.ttf', 32)
 textX = 0
 textY = 0
 
@@ -50,7 +50,7 @@ def Show_score(x, y):
 
 
 # Bullet
-bullet_icon = pygame.image.load('bullet.png')
+bullet_icon = pygame.image.load('Photos/bullet.png')
 bulletX = 370
 bulletY = 480
 bulletX_change = 0
@@ -63,7 +63,7 @@ def bullet(x, y):
 
 
 # Player
-player_icon = pygame.image.load('space-invaders.png')
+player_icon = pygame.image.load('Photos/space-invaders.png')
 playerX = 370
 playerY = 480
 playerX_change = 0
@@ -75,7 +75,7 @@ def player(x, y):
 
 # Alien
 number_of_enimies = 10
-alien_icon = pygame.image.load('space-ship.png')
+alien_icon = pygame.image.load('Photos/space-ship.png')
 alienX = []
 alienY = []
 alienX_change = []
@@ -130,7 +130,7 @@ while running:
             if event.key == pygame.K_LEFT:
                 playerX_change = -3
             if event.key == pygame.K_SPACE:
-                bullet_sound = pygame.mixer.Sound("laser.wav")
+                bullet_sound = pygame.mixer.Sound("Sounds/laser.wav")
                 bullet_sound.play()
                 bulletX = playerX + 16
                 bullet_state = 'fire'
@@ -172,7 +172,7 @@ while running:
     for k in range(number_of_enimies):
         detect = collison(bulletX, bulletY, alienX[k], alienY[k])
         if detect is True:
-            collision_sound = pygame.mixer.Sound("explosion.wav")
+            collision_sound = pygame.mixer.Sound("Sounds/explosion.wav")
             collision_sound.play()
             score += 1
             bullet_state = "ready"

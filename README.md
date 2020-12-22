@@ -2,6 +2,10 @@
  A simple 2D game
 Created fully of Python!
 
-Copy all the sounds,icons,font on the same directory of .py file.
+Simply Download the code and addons and run!
 
-Use addon only if u face error while compiling with pyinstaller.
+
+Note:Use addon only if u face error while compiling with pyinstaller.
+
+
+Background Image From attreyabhatt
