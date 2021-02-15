@@ -9,6 +9,7 @@
 
 # Note
 
+* Install requirements
 * Use addon only if u face missing dll
 
 
