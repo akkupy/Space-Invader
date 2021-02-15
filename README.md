@@ -3,17 +3,17 @@
 <h4 align="center">A 2D Game On Python</h4>
 
 
-# PROCEDURE
+# Procedure
 
 * Simply Download the code and addons and run!
 
-# NOTE
+# Note
 
 * Use addon only if u face missing dll
 
 
 
 
-# CREDIT
+# Credit
 
  * Inspired from attreyabhatt YT video
