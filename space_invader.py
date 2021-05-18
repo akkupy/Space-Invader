@@ -2,6 +2,21 @@ import pygame
 import random
 import math
 
+
+
+#     __       _       _           
+#    /  \     | |     | | 
+#   /    \    | | /\  | | /\   _   _
+#  /  /\  \   | |/ /  | |/ /  | | | |  
+# /  ____  \  | |\ \  | |\ \  | |_| |
+#/__/    \__\ |_| \_\ |_| \_\  \___/
+#
+# Copyright of Akash, 2021          
+# https://www.github.com/AkkuPY     
+# https://t.me/Akku_Legend
+
+
+
 # Initializing Pygame
 pygame.init()
 
